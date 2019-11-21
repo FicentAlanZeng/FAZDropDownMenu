@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function setFontSize(container, newSize)
+        {
+            var o=document.getElementById(container);
+            if(!o) return;
+            o.style.fontSize=newSize+'px';
+        }
+    </script>
+    <style>
+        #text {
+            position:absolute;
+            left: 100px;
+            top:100px;
+            width:300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id='text'>测试文本测试文本</div>
+<button onclick="setFontSize('text', 30)">large</button>
+<button onclick="setFontSize('text', 10)">small</button>
+</body>
+</html>
